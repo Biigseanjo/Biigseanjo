@@ -118,26 +118,7 @@ productCount = 3
 productLinks = []
 pdtPrice=[]
 for i in range(productCount):
-     
-        productLink1 = 'https://www.amazon.in/gp/product/B09V7ZJYBN?th=1'
-        productLink2 = 'https://www.amazon.in/Dell-E6330-i5-4-GB-120-GB-Integrated/dp/B07LBDB5RY'
-        productLink3 = 'https://www.amazon.in/Dell-Docking-Station-Power-Delivery/dp/B07RF9FZCS'
-        productLinks.append(productLink1)
-        productLinks.append(productLink2)
-        productLinks.append(productLink3)
-        
-        
-      
-        pdtprice1=15000
-        pdtprice2=15000
-        pdtprice3=30000
-        pdtPrice.append(pdtprice1)
-        pdtPrice.append(pdtprice2)
-        pdtPrice.append(pdtprice3)
-
-for productLink,price in zip(productLinks,pdtPrice):
-        thread = threading.Thread(target=check_price, args=(productLink,price,))
-        thread.start()
+       
 
  
 
