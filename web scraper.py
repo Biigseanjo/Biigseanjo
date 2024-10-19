@@ -77,11 +77,6 @@ def check_price(url,Price):
         while(True):   
                 page=requests.get(url,headers=headers)         
                 soup=BeautifulSoup(page.content,'lxml')        
-
-                http_proxy  = "http://10.10.1.10:3128"
-                https_proxy = "https://10.10.1.11:1080"               
-                ftp_proxy   = "ftp://10.10.1.10:3128"                           
-
                 proxyDict = { 
                                 "http"  : http_proxy, 
                                 "https" : https_proxy, 
