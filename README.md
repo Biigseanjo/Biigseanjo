@@ -6,27 +6,15 @@ Let's demonstrate how this works by tracking a sample product from Amazon.
 
 The URL of the web page of the product that we want to track is given as input to the scraper.
 
-image
-
 Once the target page has been retrieved by the scraper, it begins to fetch pricing data from the web page every couple of seconds as follows:
-
-image
 
 The retrieved product prices and corresponding timestamps are stored in a CSV file. Here, you can see the price difference during a time period of 1 day in the highlighted records.
 
-image
-
 The data from the CSV file is plotted as a live graph. This helps in visualizing the pricing variations over a period of time.
-
-Screenshot (486)
 
 It is also possible to track multiple products prices simultaneously using the scraper.
 
-Screenshot (487)
-
 When a price drop is detected, we are notified of it via email.
-
-Screenshot (489)
 
 Prerequisites
 Ensure that you have Python and the following libraries installed:
